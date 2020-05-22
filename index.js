@@ -1,3 +1,10 @@
+$(document).ready(() => {
+  if( !(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) ) {
+   $('.app').css({ 'width': '360px', 'margin': 'auto', 'border': '3px solid gray'});
+   $('.slider__nav_item').css({'width': '35px'});
+  }
+})
+
 let isNext = true;
 
 const clearClass = () => {
